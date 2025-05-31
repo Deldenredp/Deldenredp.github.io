@@ -88,6 +88,21 @@
         padding: 1rem;
       }
     }
+   .bloque-centrado {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.8;
+  hyphens: auto;
+}
+
+video {
+  width: 100%;         /* O ajusta a otro porcentaje, por ejemplo 80% */
+  height: auto;        /* Mantiene proporción */
+  max-height: 400px;   /* Limita la altura máxima */
+  background: black;
+}
+
   </style>
 </head>
 <body>
@@ -100,8 +115,8 @@
 
   <section>
     <h2>¿Quiénes somos?</h2>
-    <p>
-      En <strong>CREDITRAB</strong>, ofrecemos soluciones financieras innovadoras que permiten a trabajadores ( Emprendedores o comerciantes ) poder vender sus productos y/o servicios al crédito. Nos especializamos en tecnología financiera ( FinTech ) enfocada en el bienestar social y laboral. Nuestro principal proposito es apoyar al pequeño emprendedor y pequeños comercios, facilitandoles una plataforma digital que les dara acceso a un nicho de mercado unico y seguro, como ser los empleados de empresas que esten afiliadas a nuestra <strong>RED PATRONAL</strong>. Estos empleados, tambien se beneficiaran de <strong>CREDITRAB</strong>, ya que tendran acceso sin costo alguno, a nuestra <strong>RED de POs VIRTUALES</strong> donde podran realizar compras al credito, de productos o servicios de primera necesidad de los principales sectores, tales como ser: Salud, Comestibles, Comercio y Emprendedores. Nuestra robusta plataforma facilita el credito a corto o largo plazo, generando automaticamente las cuotas que correspondan, segun convenio entre comercio y cliente.
+    <p class="texto-centrado">
+      En <strong>CREDITRAB</strong>, ofrecemos soluciones financieras innovadoras que permiten a trabajadores ( Emprendedores o comerciantes ) <strong>lograr vender</strong> sus productos y/o servicios <strong>al crédito,</strong> de una forma automatizada y <strong>sin riesgos de mora.</strong> Nos especializamos en tecnología financiera ( FinTech ) enfocada en el bienestar social y laboral. Nuestro principal proposito es apoyar al emprendedor y pequeños comercios, facilitandoles una plataforma digital que les dara acceso a un nicho de mercado unico y seguro, como ser los empleados de empresas que esten afiliadas a nuestra <strong>RED PATRONAL</strong>. Estos empleados, tambien se beneficiaran de <strong>CREDITRAB</strong>, ya que tendran acceso <strong>sin costo alguno</strong>, a nuestra <strong>RED de POs VIRTUALES</strong> donde podran realizar compras al credito, de productos o servicios <strong>de primera necesidad</strong> de los principales sectores, tales como ser: Salud, Comestibles, Comercio y Emprendedores. Nuestra robusta plataforma, facilita el credito a corto y largo plazo, generando automaticamente las cuotas correspondientes, en base al convenio entre comerciante y cliente. 
     </p>
   </section>
 
@@ -150,6 +165,25 @@
     <p>
       Gracias a nuestra plataforma móvil, todo el proceso se gestiona desde la palma de tu mano.
     </p>
+
+  <!-- Label que se ve como botón -->
+<label 
+  onclick="document.getElementById('videoModal').style.display='block';"
+  style="display:inline-block; margin-top:1rem; padding:0.6rem 1rem; background-color: var(--dorado); color: white; border-radius: 4px; text-align:center; cursor: pointer;">
+  Ver Video Ilustrativo
+</label>
+
+    <!-- Modal con video local -->
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <video id="videoPlayer" controls>
+          <source src="video01.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+  
   </section>
 
   <section>
