@@ -13,6 +13,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+
+    .text-brand {
+    color: #c99e22;
+  }
+  .bg-brand {
+    background-color: #c99e22;
+  }
+  .hover\:bg-brand:hover {
+    background-color: #b4881d;
+  }
+  .border-brand {
+    border-color: #c99e22;
+  }
+
     body {
       font-family: 'Inter', sans-serif;
     }
@@ -27,27 +41,27 @@
 </head>
 <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
   <!-- Navbar -->
-  <nav class="sticky top-0 z-50 bg-white dark:bg-gray-800 text-yellow-600 px-4 py-3 shadow">
+  <nav class="sticky top-0 z-50 bg-white dark:bg-gray-800 text-brand px-4 py-3 shadow">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
       <div class="flex items-center space-x-3">
         <img src="logoct.png" alt="Logo de Creditrab - Crédito para trabajadores" class="h-10">
         <span class="text-lg font-bold"></span>
       </div>
       <ul class="hidden md:flex space-x-6 font-semibold">
-        <li><a href="#inicio" class="relative inline-block px-2 py-1 text-yellow-600  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Inicio</a></li>
+        <li><a href="#inicio" class="relative inline-block px-2 py-1 text-brand  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Inicio</a></li>
         
 
-        <li><a href="#quienes" class="relative inline-block px-2 py-1 text-yellow-600  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Quiénes somos</a></li>
-        <li><a href="#servicios" class="relative inline-block px-2 py-1 text-yellow-600  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Servicios</a></li>
-        <li><a href="#beneficiarios" class="relative inline-block px-2 py-1 text-yellow-600  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Beneficiarios</a></li>
-        <li><a href="#como-funciona" class="relative inline-block px-2 py-1 text-yellow-600  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Funcionalidad</a></li> <!-- texto cambiado -->
-        <li><a href="#contacto" class="relative inline-block px-2 py-1 text-yellow-600  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Contacto</a></li>
+        <li><a href="#quienes" class="relative inline-block px-2 py-1 text-brand  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Quiénes somos</a></li>
+        <li><a href="#servicios" class="relative inline-block px-2 py-1 text-brand  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Servicios</a></li>
+        <li><a href="#beneficiarios" class="relative inline-block px-2 py-1 text-brand  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Beneficiarios</a></li>
+        <li><a href="#como-funciona" class="relative inline-block px-2 py-1 text-brand  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Funcionalidad</a></li> <!-- texto cambiado -->
+        <li><a href="#contacto" class="relative inline-block px-2 py-1 text-brand  before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:w-full">Contacto</a></li>
       </ul>
       <div class="flex items-center space-x-4">
-        <button id="themeToggle" aria-label="Cambiar tema" class="text-yellow-600 text-xl focus:outline-none">
+        <button id="themeToggle" aria-label="Cambiar tema" class="text-brand text-xl focus:outline-none">
           <i class="fas fa-moon"></i>
         </button>
-        <button id="menuBtn" aria-label="Abrir menú" class="md:hidden text-yellow-600 focus:outline-none">
+        <button id="menuBtn" aria-label="Abrir menú" class="md:hidden text-brand focus:outline-none">
           <i class="fas fa-bars text-2xl"></i>
         </button>
       </div>
@@ -88,7 +102,7 @@
       <p class="text-lg text-gray-800 dark:text-gray-300">
       En <strong>CREDITRAB</strong>, ofrecemos soluciones financieras innovadoras que permiten a emprendedores o comerciantes <strong>vender</strong> sus productos y/o servicios <strong>al crédito</strong> de una forma automatizada y <strong>sin riesgos de mora.</strong> Nos especializamos en tecnología financiera (FinTech) enfocada en el bienestar social y laboral. Nuestro principal proposito es apoyar al emprendedor y pequeños comercios, facilitandoles una plataforma digital que les dara acceso a un nicho de mercado especial, como ser empleados de empresas solidas que esten afiliadas a nuestra exclusiva <strong>RED PATRONAL</strong>.
     </p>
-    <div class="bg-primary-50 dark:bg-gray-700 p-6 mt-6 rounded-lg border-l-4 border-yellow-600">
+    <div class="bg-primary-50 dark:bg-gray-700 p-6 mt-6 rounded-lg border-l-4 border-brand">
       <p class="text-gray-700 dark:text-gray-300 italic">
         "Facilitamos el crédito a corto y largo plazo, generando automáticamente las cuotas correspondientes, en base al convenio entre comerciante y cliente."
       </p>
@@ -98,25 +112,25 @@
   <!-- Servicios -->
   <section id="servicios" class="bg-gray-100 dark:bg-gray-800 py-8">
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-xl font-semibold text-yellow-600 mb-6">Nuestros servicios</h2>
+      <h2 class="text-xl font-semibold text-brand mb-6">Nuestros servicios</h2>
       <div class="grid md:grid-cols-2 gap-6">
         <!-- VPOS -->
         <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105">
-          <i class="fa-solid fa-store text-yellow-600 text-2xl mb-3"></i>
-          <h3 class="text-lg font-bold text-yellow-600 mb-2">Puntos de Venta Virtual (VPOS)</h3>
+          <i class="fa-solid fa-store text-brand text-2xl mb-3"></i>
+          <h3 class="text-lg font-bold text-brand mb-2">Puntos de Venta Virtual (VPOS)</h3>
           <p class="mb-4">Ofrecemos plataformas de venta digital que permiten a comercios aceptar pagos sin necesidad de hardware físico. Nuestra solución es rápida, segura y diseñada para pequeños negocios. Control total desde una app móvil.</p>
           <a href="#" onclick="alert('¡Este servicio estará disponible próximamente!'); return false;"
-             class="inline-block bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
+             class="inline-block bg-brand text-white px-4 py-2 rounded hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
             <i class="fa-solid fa-plus mr-2"></i>Afiliación de VPOS
           </a>
         </div>
         <!-- VPC -->
         <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105">
-          <i class="fa-solid fa-credit-card text-yellow-600 text-2xl mb-3"></i>
-          <h3 class="text-lg font-bold text-yellow-600 mb-2">Tarjetas de Planilla Virtuales (VPC)</h3>
+          <i class="fa-solid fa-credit-card text-brand text-2xl mb-3"></i>
+          <h3 class="text-lg font-bold text-brand mb-2">Tarjetas de Planilla Virtuales (VPC)</h3>
           <p class="mb-4">Proporcionamos tarjetas digitales para compras al crédito, ideales para empleados que requieren cubrir necesidades basicas o sin acceso bancario tradicional. Control total desde una app móvil.</p>
           <a href="#" onclick="alert('¡Este servicio estará disponible próximamente!'); return false;"
-             class="inline-block bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
+             class="inline-block bg-brand text-white px-4 py-2 rounded hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
             <i class="fa-solid fa-briefcase mr-2"></i>Afiliación Patronos
           </a>
         </div>
@@ -127,20 +141,20 @@
 <!-- Beneficios para Emprendedores -->
 <section id="beneficiarios" class="bg-gray-100 dark:bg-gray-800 py-10">
   <div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-xl font-semibold text-yellow-600 mb-6">Beneficios para los Comercios</h2>
+    <h2 class="text-xl font-semibold text-brand mb-6">Beneficios para los Comercios</h2>
     <div class="grid md:grid-cols-3 gap-6">
       <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center transition transform hover:scale-105">
-        <i class="fa-solid fa-cash-register text-yellow-600 text-3xl mb-4"></i>
+        <i class="fa-solid fa-cash-register text-brand text-3xl mb-4"></i>
         <h3 class="text-lg font-bold mb-2">Ventas al crédito</h3>
         <p>Amplía tus oportunidades de venta permitiendo a tus clientes pagar en cuotas.</p>
       </div>
       <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center transition transform hover:scale-105">
-        <i class="fa-solid fa-shield-halved text-yellow-600 text-3xl mb-4"></i>
+        <i class="fa-solid fa-shield-halved text-brand text-3xl mb-4"></i>
         <h3 class="text-lg font-bold mb-2">Cero riesgo de mora</h3>
         <p>El sistema asegura el cobro automático desde la planilla del cliente. Tú vendes, nosotros garantizamos el pago.</p>
       </div>
       <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center transition transform hover:scale-105">
-        <i class="fa-solid fa-rocket text-yellow-600 text-3xl mb-4"></i>
+        <i class="fa-solid fa-rocket text-brand text-3xl mb-4"></i>
         <h3 class="text-lg font-bold mb-2">Impulsa tu negocio</h3>
         <p>Digitaliza tus ventas, llega a más clientes y mejora tu presencia sin necesidad de grandes inversiones.</p>
       </div>
@@ -153,20 +167,20 @@
   <section id="beneficios-empleados" class="bg-gray-100 dark:bg-gray-800 py-10"> 
   
     <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-xl font-semibold text-yellow-600 mb-6">Beneficios para los Empleados</h2>
+      <h2 class="text-xl font-semibold text-brand mb-6">Beneficios para los Empleados</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow text-center transition transform hover:scale-105">
-          <i class="fa-solid fa-percent text-yellow-600 text-3xl mb-4"></i>
+          <i class="fa-solid fa-percent text-brand text-3xl mb-4"></i>
           <h3 class="text-lg font-bold mb-2">Sin intereses</h3>
           <p>Compra lo que necesitas sin preocuparte por tasas de interés. Tu tranquilidad es nuestra prioridad.</p>
         </div>
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow text-center transition transform hover:scale-105">
-          <i class="fa-solid fa-bell-slash text-yellow-600 text-3xl mb-4"></i>
+          <i class="fa-solid fa-bell-slash text-brand text-3xl mb-4"></i>
           <h3 class="text-lg font-bold mb-2">Sin moras</h3>
           <p>Olvídate de cargos por pagos tardíos. Nuestro sistema de deducción evita cualquier mora.</p>
         </div>
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow text-center transition transform hover:scale-105">
-          <i class="fa-solid fa-file-invoice-dollar text-yellow-600 text-3xl mb-4"></i>
+          <i class="fa-solid fa-file-invoice-dollar text-brand text-3xl mb-4"></i>
           <h3 class="text-lg font-bold mb-2">Deducción de planilla</h3>
           <p>Pagos automáticos desde tu salario, sin papeleos ni gestiones mensuales.</p>
         </div>
@@ -176,20 +190,20 @@
 
   <!-- Cómo funciona -->
   <section id="como-funciona" class="max-w-5xl mx-auto p-6">
-    <h2 class="text-xl font-semibold text-yellow-600 mb-4">¿Cómo funciona?</h2>
+    <h2 class="text-xl font-semibold text-brand mb-4">¿Cómo funciona?</h2>
     <p class="mb-4">Nuestro sistema permite a los empleados de una empresa afiliada, realizar compras presenciales o remotas al crédito, con pagos quincenales o mensuales. Todo basado en Tokens de codigo QR. Nuestros poderosos <strong>VPOS</strong> registran facilmente estas transacciones, para luego descontar los montos directamente de la planilla de pago del empleado, lo que garantiza seguridad tanto para el comercio como para el cliente.</p>
     <button onclick="document.getElementById('videoModal').classList.remove('hidden');"
-            class="bg-yellow-600 text-white px-4 py-2 rounded hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
+            class="bg-brand text-white px-4 py-2 rounded hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
       <i class="fa-solid fa-play mr-2"></i>Ver Video Ilustrativo
     </button>
 
-    <div class="bg-primary-50 dark:bg-gray-700 p-6 mt-6 rounded-lg border-l-4 border-yellow-600">
+    <div class="bg-primary-50 dark:bg-gray-700 p-6 mt-6 rounded-lg border-l-4 border-brand">
       <p class="text-gray-700 dark:text-gray-300 italic">
         "Gracias a nuestra plataforma móvil, todo el proceso se gestiona desde la palma de tu mano."
       </p>
     </div>
 
-    <div class="bg-primary-50 dark:bg-gray-700 p-6 mt-6 rounded-lg border-l-4 border-yellow-600">
+    <div class="bg-primary-50 dark:bg-gray-700 p-6 mt-6 rounded-lg border-l-4 border-brand">
       <p class="text-gray-700 dark:text-gray-300 italic">
         "Contamos con tres modelos de negocio, Planillas de Empleados, Planillas de Clientes y Planilla Financiera. Descubre con nosotros todas estas opciones."
       </p>
@@ -212,21 +226,21 @@
 
   <!-- Contacto -->
   <section id="contacto" class="max-w-5xl mx-auto p-6">
-    <h2 class="text-xl font-semibold text-yellow-600 mb-4">Contacto</h2>
+    <h2 class="text-xl font-semibold text-brand mb-4">Contacto</h2>
     <p>
       ¿Te interesa colaborar con nosotros o usar nuestros servicios? Escríbenos a
-      <a href="mailto:contacto@creditrab.com" class="text-yellow-600 underline">contacto@creditrab.com</a>
+      <a href="mailto:contacto@creditrab.com" class="text-brand underline">contacto@creditrab.com</a>
       y con gusto te responderemos.
     </p>
   </section>
 
   <!-- Botón flotante de contacto -->
-  <a href="mailto:contacto@creditrab.com" class="fixed bottom-6 right-6 bg-yellow-600 text-white p-3 rounded-full shadow-lg hover:bg-yellow-700 transition">
+  <a href="mailto:contacto@creditrab.com" class="fixed bottom-6 right-6 bg-brand text-white p-3 rounded-full shadow-lg hover:bg-yellow-700 transition">
     <i class="fa-solid fa-envelope text-xl"></i>
   </a>
 
   <!-- Footer -->
-  <footer class="bg-yellow-600 text-white text-center py-4 mt-8">
+  <footer class="bg-brand text-white text-center py-4 mt-8">
     &copy; 2025 Datos y Aplicaciones en Línea
   </footer>
 
