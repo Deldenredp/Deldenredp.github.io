@@ -38,6 +38,30 @@
       backdrop-filter: blur(4px);
     }
   </style>
+
+<style>
+  /* Adaptar inputs y textareas al modo claro/oscuro */
+  input, textarea {
+    background-color: white;
+    color: black;
+  }
+
+  .dark input, .dark textarea {
+    background-color: #1f2937; /* gris oscuro */
+    color: white;
+    border-color: #4b5563; /* gris más suave */
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: #6b7280; /* gris claro */
+  }
+
+  .dark input::placeholder, .dark textarea::placeholder {
+    color: #9ca3af; /* gris más claro en dark mode */
+  }
+</style>
+
+  
 </head>
 <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
   <!-- Navbar -->
