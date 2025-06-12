@@ -119,7 +119,7 @@
           <i class="fa-solid fa-store text-brand text-2xl mb-3"></i>
           <h3 class="text-lg font-bold text-brand mb-2">Puntos de Venta Virtual (VPOS)</h3>
           <p class="mb-4">Ofrecemos plataformas de venta digital que permiten a comercios aceptar pagos sin necesidad de hardware físico. Nuestra solución es rápida, segura y diseñada para pequeños negocios. Control total desde una app móvil.</p>
-          <a href="#" onclick="document.getElementById('formModal').classList.remove('hidden'); return false;"
+          <a href="#" onclick="abrirFormulario('vpos'); return false;"
 
              class="inline-block bg-brand text-white px-4 py-2 rounded hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
             <i class="fa-solid fa-plus mr-2"></i>Afiliación de VPOS
@@ -130,7 +130,7 @@
           <i class="fa-solid fa-credit-card text-brand text-2xl mb-3"></i>
           <h3 class="text-lg font-bold text-brand mb-2">Tarjetas de Planilla Virtuales (VPC)</h3>
           <p class="mb-4">Proporcionamos tarjetas digitales para compras al crédito, ideales para empleados que requieren cubrir necesidades basicas o sin acceso bancario tradicional. Control total desde una app móvil.</p>
-          <a href="#" onclick="alert('¡Este servicio estará disponible próximamente!'); return false;"
+          <a href="#" onclick="abrirFormulario('patronos'); return false;"
              class="inline-block bg-brand text-white px-4 py-2 rounded hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
             <i class="fa-solid fa-briefcase mr-2"></i>Afiliación Patronos
           </a>
@@ -301,38 +301,69 @@
     });
   </script>
 
-<!-- Modal de Formulario -->
-<div id="formModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
-  <div class="bg-white dark:bg-gray-800 p-6 rounded-lg max-w-lg w-full relative">
-    <button onclick="document.getElementById('formModal').classList.add('hidden')"
-            class="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-600 w-8 h-8 rounded-full text-xl">&times;</button>
-    <h2 class="text-2xl font-bold mb-4 text-brand">Formulario de Afiliación</h2>
-    <form action="https://formsubmit.co/dennisredp@hotmail.com" method="POST" class="space-y-4">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="Nueva solicitud de afiliación">
 
-      <div>
-        <label for="nombre" class="block text-sm font-semibold">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" required class="w-full p-2 border border-gray-300 rounded dark:bg-gray-700 dark:text-white">
-      </div>
-      <div>
-        <label for="email" class="block text-sm font-semibold">Correo electrónico</label>
-        <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded dark:bg-gray-700 dark:text-white">
-      </div>
-      <div>
-        <label for="empresa" class="block text-sm font-semibold">Empresa / Comercio</label>
-        <input type="text" id="empresa" name="empresa" class="w-full p-2 border border-gray-300 rounded dark:bg-gray-700 dark:text-white">
-      </div>
-      <div>
-        <label for="mensaje" class="block text-sm font-semibold">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="3" class="w-full p-2 border border-gray-300 rounded dark:bg-gray-700 dark:text-white"></textarea>
-      </div>
-      <button type="submit" class="bg-brand text-white px-4 py-2 rounded hover:bg-yellow-700 transition">
-        Enviar solicitud
-      </button>
+
+<!-- Modal Formulario -->
+<div id="formModal" class="fixed inset-0 bg-black/70 z-50 hidden flex items-center justify-center">
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-xl relative">
+    <button onclick="cerrarFormulario()" class="absolute top-2 right-2 text-white bg-red-500 hover:bg-red-600 rounded-full w-8 h-8 flex items-center justify-center">
+      &times;
+    </button>
+
+    <!-- Formulario VPOS -->
+    <form id="formVPOS" class="hidden space-y-4" action="https://formsubmit.co/afiliaciones@creditrab.com" method="POST">
+      <h2 class="text-xl font-semibold text-brand mb-2">Afiliación de VPOS</h2>
+      <input type="text" name="nombre" placeholder="Tu nombre" required class="w-full p-2 border border-gray-300 rounded">
+      <input type="email" name="correo" placeholder="Tu correo electrónico" required class="w-full p-2 border border-gray-300 rounded">
+      <input type="text" name="nombre_comercio" placeholder="Nombre del comercio" required class="w-full p-2 border border-gray-300 rounded">
+      <textarea name="mensaje" placeholder="¿Qué tipo de productos vendes?" required class="w-full p-2 border border-gray-300 rounded"></textarea>
+      <input type="hidden" name="_subject" value="Nueva solicitud de afiliación VPOS">
+      <button type="submit" class="bg-brand text-white px-4 py-2 rounded hover:bg-yellow-700">Enviar</button>
+    </form>
+
+    <!-- Formulario Patronos -->
+    <form id="formPatronos" class="hidden space-y-4" action="https://formsubmit.co/afiliaciones@creditrab.com" method="POST">
+      <h2 class="text-xl font-semibold text-brand mb-2">Afiliación de Patronos</h2>
+      <input type="text" name="nombre" placeholder="Nombre del representante" required class="w-full p-2 border border-gray-300 rounded">
+      <input type="email" name="correo" placeholder="Correo electrónico" required class="w-full p-2 border border-gray-300 rounded">
+      <input type="text" name="empresa" placeholder="Nombre de la empresa" required class="w-full p-2 border border-gray-300 rounded">
+      <input type="text" name="jefe_rrhh" required placeholder="Nombre del Jefe de Recursos Humanos" class="w-full p-2 border rounded">
+      <input type="email" name="correo_rrhh" required placeholder="Correo del Jefe de Recursos Humanos" class="w-full p-2 border rounded">
+      <textarea name="mensaje" placeholder="Número de empleados, interés en el servicio, etc." required class="w-full p-2 border border-gray-300 rounded"></textarea>
+      <input type="hidden" name="_subject" value="Nueva solicitud de afiliación Patronos">
+      <button type="submit" class="bg-brand text-white px-4 py-2 rounded hover:bg-yellow-700">Enviar</button>
     </form>
   </div>
 </div>
+
+<script>
+  function abrirFormulario(tipo) {
+    // Oculta ambos formularios
+    document.getElementById('formVPOS').classList.add('hidden');
+    document.getElementById('formPatronos').classList.add('hidden');
+
+    // Muestra el correcto
+    if (tipo === 'vpos') {
+      document.getElementById('formVPOS').classList.remove('hidden');
+    } else if (tipo === 'patronos') {
+      document.getElementById('formPatronos').classList.remove('hidden');
+    }
+
+    // Abre modal
+    document.getElementById('formModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function cerrarFormulario() {
+    document.getElementById('formModal').classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+</script>
+
+
+
+
+
 
 </body>
 </html>
