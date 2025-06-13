@@ -61,7 +61,7 @@
   }
 </style>
 
-  
+
 </head>
 <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
   <!-- Navbar -->
@@ -128,7 +128,7 @@
     </p>
     <div class="bg-primary-50 dark:bg-gray-700 p-6 mt-6 rounded-lg border-l-4 border-brand">
       <p class="text-gray-700 dark:text-gray-300 italic">
-        "Facilitamos el crédito a corto y largo plazo, generando automáticamente las cuotas correspondientes, en base al convenio entre comerciante y cliente."
+        "Facilitamos el crédito a corto y largo plazo, generando automáticamente las cuotas correspondientes, en base al convenio entre comerciante y cliente.",
       </p>
     </div>
   </section>
@@ -142,7 +142,7 @@
         <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105">
           <i class="fa-solid fa-store text-brand text-2xl mb-3"></i>
           <h3 class="text-lg font-bold text-brand mb-2">Puntos de Venta Virtual (VPOS)</h3>
-          <p class="mb-4">Ofrecemos plataformas de venta digital que permiten a comercios aceptar pagos sin necesidad de hardware físico. Nuestra solución es rápida, segura y diseñada para pequeños negocios. Control total desde una app móvil.</p>
+          <p class="mb-4">Ofrecemos plataformas de venta digital que permiten a comercios aceptar pagos sin necesidad de hardware físico. Nuestra solución es rápida, segura y diseñada para pequeños negocios. Control total desde tu celular.</p>
           <a href="#" onclick="abrirFormulario('vpos'); return false;"
 
              class="inline-block bg-brand text-white px-4 py-2 rounded hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
@@ -153,7 +153,7 @@
         <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105">
           <i class="fa-solid fa-credit-card text-brand text-2xl mb-3"></i>
           <h3 class="text-lg font-bold text-brand mb-2">Tarjetas de Planilla Virtuales (VPC)</h3>
-          <p class="mb-4">Proporcionamos tarjetas digitales para compras al crédito, ideales para empleados que requieren cubrir necesidades basicas o sin acceso bancario tradicional. Control total desde una app móvil.</p>
+          <p class="mb-4">Proporcionamos tarjetas digitales para compras al crédito, ideales para empleados que requieren cubrir necesidades basicas o sin acceso bancario tradicional. Control total desde tu celular.</p>
           <a href="#" onclick="abrirFormulario('patronos'); return false;"
              class="inline-block bg-brand text-white px-4 py-2 rounded hover:bg-yellow-700 transition duration-300 ease-in-out transform hover:scale-105">
             <i class="fa-solid fa-briefcase mr-2"></i>Afiliación Patronos
@@ -196,8 +196,8 @@
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center transition transform hover:scale-105">
           <i class="fa-solid fa-file-invoice-dollar text-brand text-3xl mb-4"></i>
-          <h3 class="text-lg font-bold mb-2">Facilidad de Pagos</h3>
-          <p>Pagos automáticos desde tu salario, sin papeleos ni gestiones mensuales.</p>
+          <h3 class="text-lg font-bold mb-2">Facilidad de Compra</h3>
+          <p>Compras via Codigo QR, Pagos automáticos desde tu salario, sin papeleos ni gestiones mensuales.</p>
         </div>
         <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow text-center transition transform hover:scale-105">
           <i class="fa-solid fa-percent text-brand text-3xl mb-4"></i>
@@ -340,6 +340,8 @@
       <h2 class="text-xl font-semibold text-brand mb-2">Afiliación de VPOS</h2>
       <input type="text" name="nombre" placeholder="Tu nombre" required class="w-full p-2 border border-gray-300 rounded">
       <input type="email" name="correo" placeholder="Tu correo electrónico" required class="w-full p-2 border border-gray-300 rounded">
+      <input type="tel" name="telefono" placeholder="Tu número de celular" required class="w-full p-2 border border-gray-300 rounded">
+
       <input type="text" name="nombre_comercio" placeholder="Nombre del comercio" required class="w-full p-2 border border-gray-300 rounded">
       <textarea name="mensaje" placeholder="¿Qué tipo de productos vendes?" required class="w-full p-2 border border-gray-300 rounded"></textarea>
       <input type="hidden" name="_next" value="https://creditrab.com/gracias.html">
@@ -355,6 +357,8 @@
       <input type="text" name="empresa" placeholder="Nombre de la empresa" required class="w-full p-2 border border-gray-300 rounded">
       <input type="text" name="jefe_rrhh" required placeholder="Nombre del Jefe de Recursos Humanos" class="w-full p-2 border rounded">
       <input type="email" name="correo_rrhh" required placeholder="Correo del Jefe de Recursos Humanos" class="w-full p-2 border rounded">
+      <input type="tel" name="telefono" placeholder="Número de celular" required class="w-full p-2 border border-gray-300 rounded">
+
       <textarea name="mensaje" placeholder="Número de empleados, interés en el servicio, etc." required class="w-full p-2 border border-gray-300 rounded"></textarea>
       <input type="hidden" name="_next" value="https://creditrab.com/gracias.html">
       <input type="hidden" name="_subject" value="Nueva solicitud de afiliación Patronos">
