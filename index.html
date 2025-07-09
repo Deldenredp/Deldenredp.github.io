@@ -133,6 +133,139 @@
     </div>
   </section>
 
+<!-- SECCIÓN: Misión, Visión y Nuestros Valores -->
+<section class="bg-white dark:bg-gray-900 py-10">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold text-brand mb-6">Conócenos</h2>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      
+      <button onclick="openModal('modal-mision')"
+              class="bg-brand text-white px-6 py-3 rounded-full hover:opacity-90 transition font-medium">
+        Misión
+      </button>
+
+      <button onclick="openModal('modal-vision')"
+              class="bg-brand text-white px-6 py-3 rounded-full hover:opacity-90 transition font-medium">
+        Visión
+      </button>
+
+      <button onclick="openModal('modal-valores')"
+              class="bg-brand text-white px-6 py-3 rounded-full hover:opacity-90 transition font-medium">
+        Nuestros Valores
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- MODALES -->
+<!-- Misión -->
+<div id="modal-mision" class="modal-overlay hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-lg max-w-md relative animate-fade-in">
+    <button onclick="closeModal('modal-mision')"
+            class="absolute top-3 right-4 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h3 class="text-xl font-bold mb-3 text-brand">Nuestra Misión</h3>
+    <p class="text-gray-700 dark:text-gray-200 text-sm">
+      Ofrecer a los trabajadores plataformas digitales ágiles y seguras que conecten comercios con empleados de diferentes empresas, facilitando así la compra/venta de productos al crédito y promoviendo su bienestar financiero.
+    </p>
+  </div>
+</div>
+
+<!-- Visión -->
+<div id="modal-vision" class="modal-overlay hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-lg max-w-md relative animate-fade-in">
+    <button onclick="closeModal('modal-vision')"
+            class="absolute top-3 right-4 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h3 class="text-xl font-bold mb-3 text-brand">Nuestra Visión</h3>
+    <p class="text-gray-700 dark:text-gray-200 text-sm">
+      Ser la red Fintech líder en Honduras que transforme la manera en que los comercios venden a crédito, eliminando el riesgo de impago y permitiendo que cada emprendedor o negocio, sin importar su tamaño, pueda brindar opciones de crédito a todos los trabajadores de Honduras.
+    </p>
+  </div>
+</div>
+
+<!-- Valores -->
+<div id="modal-valores" class="modal-overlay hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white dark:bg-gray-800 p-6 rounded-lg max-w-md relative animate-fade-in overflow-y-auto max-h-[80vh]">
+    <button onclick="closeModal('modal-valores')"
+            class="absolute top-3 right-4 text-gray-500 hover:text-red-500 text-2xl">&times;</button>
+    <h3 class="text-xl font-bold mb-3 text-brand">Nuestros Valores</h3>
+    
+    <ul class="text-gray-700 dark:text-gray-200 text-sm list-disc list-inside space-y-4 max-w-md mx-auto text-left">
+
+      <li class="flex items-start space-x-3">
+        <svg class="w-6 h-6 text-brand flex-shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+          <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+        <span><strong>Innovación</strong> – Aplicamos soluciones digitales para transformar el acceso al crédito.</span>
+      </li>
+
+      <li class="flex items-start space-x-3">
+        <svg class="w-6 h-6 text-brand flex-shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+          <circle cx="12" cy="12" r="10" />
+          <path d="M8 12l2 2 4-4" />
+        </svg>
+        <span><strong>Seguridad</strong> – Protegemos los datos y transacciones con tecnología robusta.</span>
+      </li>
+
+      <li class="flex items-start space-x-3">
+        <svg class="w-6 h-6 text-brand flex-shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+          <path d="M12 20h9" />
+          <path d="M12 4h9" />
+          <path d="M12 12h9" />
+          <path d="M3 6h.01" />
+          <path d="M3 18h.01" />
+          <path d="M3 12h.01" />
+        </svg>
+        <span><strong>Responsabilidad</strong> – Actuamos con integridad y seriedad con nuestros compromisos.</span>
+      </li>
+
+      <li class="flex items-start space-x-3">
+        <svg class="w-6 h-6 text-brand flex-shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+          <path d="M18 2a6 6 0 0 0-6 6v4" />
+          <path d="M12 20a9 9 0 0 1-9-9" />
+          <circle cx="12" cy="14" r="4" />
+        </svg>
+        <span><strong>Respeto</strong> – Valoramos y tratamos con dignidad a todas las personas.</span>
+      </li>
+
+      <li class="flex items-start space-x-3">
+        <svg class="w-6 h-6 text-brand flex-shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+          <path d="M12 2l3 7h7l-5.5 4.5 2 7-6-4-6 4 2-7L2 9h7z" />
+        </svg>
+        <span><strong>Energía</strong> – Trabajamos con mucha pasión y entusiasmo porque creemos en lo que hacemos.</span>
+      </li>
+
+      <li class="flex items-start space-x-3">
+        <svg class="w-6 h-6 text-brand flex-shrink-0 mt-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" >
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+        </svg>
+        <span><strong>Responsabilidad Social</strong> – Creamos soluciones para mejorar la calidad de vida de los empleados y promover el crecimiento de pequeños comercios.</span>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<!-- SCRIPT para abrir/cerrar modales -->
+<script>
+  function openModal(id) {
+    document.getElementById(id).classList.remove('hidden');
+  }
+  function closeModal(id) {
+    document.getElementById(id).classList.add('hidden');
+  }
+
+  // Cerrar al hacer clic fuera
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.modal-overlay').forEach(modal => {
+      if (!modal.classList.contains('hidden') && e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  });
+</script>
+
+
+
   <!-- Servicios -->
   <section id="servicios" class="bg-gray-100 dark:bg-gray-800 py-8">
     <div class="max-w-5xl mx-auto px-6">
