@@ -1,1 +1,1 @@
-Ejecutandose procesos de cierre diario. En unos minutos estaran arriba los servicios.
+En este momento se estan ejecutandose procesos de cierre diario. 
