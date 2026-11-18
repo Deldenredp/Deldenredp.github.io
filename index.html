@@ -103,7 +103,7 @@
   <!-- Header -->
   <header id="inicio" class="bg-[#c99e22] text-white shadow p-10 text-center">
     <h1 class="text-3xl font-bold mb-2">Crédito Digital para los Trabajadores</h1>
-    <p class="text-lg italic">Ideas y Soluciones para el Emprendedor</p>
+    <p class="text-lg italic">Ideas y Soluciones para Crecer</p>
   </header>
 
   <!-- Quiénes somos -->
@@ -434,7 +434,7 @@
 
   <!-- Footer -->
   <footer class="bg-brand text-white text-center py-4 mt-8">
-    &copy; 2025 Datos y Aplicaciones en Línea
+    &copy; 2026 Datos y Aplicaciones en Línea
   
   </footer>
 
@@ -454,11 +454,13 @@
     const icon = themeToggle.querySelector('i');
     const root = document.documentElement;
 
-    if (localStorage.getItem('theme') === 'dark') {
-      root.classList.add('dark');
-      icon.classList.remove('fa-moon');
-      icon.classList.add('fa-sun');
-    }
+    // Iniciar siempre en modo oscuro por defecto
+root.classList.add('dark');
+
+icon.classList.remove('fa-moon');
+icon.classList.add('fa-sun');
+
+localStorage.setItem('theme', 'dark');
 
     themeToggle.addEventListener('click', () => {
       root.classList.toggle('dark');
